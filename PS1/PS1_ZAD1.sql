@@ -22,6 +22,7 @@ CREATE TABLE Sale
     id number(10) PRIMARY KEY,
     zip_id number(10),
     time_id number(10),
+    sale number(10),
     CONSTRAINT fk_zip_id FOREIGN KEY (zip_id) REFERENCES Zip (id),
     CONSTRAINT fk_time_id FOREIGN KEY (time_id) REFERENCES Time (id)
 );
